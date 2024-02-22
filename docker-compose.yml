@@ -3,3 +3,7 @@ services:
   main:
     build: .
     container_name: pikabot
+    volumes:
+      - pikabot-disk:/home/pikabot/data
+volumes:
+  pikabot-disk:
